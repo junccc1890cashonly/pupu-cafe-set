@@ -61,6 +61,11 @@ def _read_from_kv() -> list[dict[str, Any]]:
     return parsed
 
 
+def _clear_kv() -> None:
+    key = "cutlery-survey:submissions"
+    _kv_request(["DEL", key])
+
+
 def _db_path() -> Path:
     if os.access(LOCAL_DB.parent, os.W_OK):
         return LOCAL_DB
@@ -100,6 +105,13 @@ def _read_from_sqlite() -> list[dict[str, Any]]:
     return [json.loads(row[0]) for row in rows]
 
 
+def _clear_sqlite() -> None:
+    conn = _ensure_sqlite()
+    conn.execute("DELETE FROM submissions")
+    conn.commit()
+    conn.close()
+
+
 def _save_record(record: dict[str, Any]) -> str:
     try:
         if _kv_config():
@@ -118,6 +130,17 @@ def _read_records() -> tuple[list[dict[str, Any]], str]:
     except (RuntimeError, urllib.error.URLError):
         pass
     return _read_from_sqlite(), "sqlite"
+
+
+def _clear_records() -> str:
+    try:
+        if _kv_config():
+            _clear_kv()
+            return "vercel-kv"
+    except (RuntimeError, urllib.error.URLError):
+        pass
+    _clear_sqlite()
+    return "sqlite"
 
 
 class handler(BaseHTTPRequestHandler):
@@ -142,6 +165,10 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:
         records, storage = _read_records()
         self._send_json({"storage": storage, "submissions": records})
+
+    def do_DELETE(self) -> None:
+        storage = _clear_records()
+        self._send_json({"ok": True, "storage": storage, "cleared": True})
 
     def do_POST(self) -> None:
         content_length = int(self.headers.get("Content-Length", "0"))
