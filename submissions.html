@@ -58,12 +58,16 @@
     const content = document.getElementById("content");
 
     function render(submissions, storage) {
-      if (!submissions.length) {
+      const validSubmissions = submissions.filter(
+        submission => Array.isArray(submission.answers) && submission.answers.length > 0
+      );
+
+      if (!validSubmissions.length) {
         content.innerHTML = `<section class="card"><p>暂时还没有提交结果。</p><p class="muted">当前存储方式：${storage}</p></section>`;
         return;
       }
 
-      content.innerHTML = submissions.map((submission, index) => {
+      content.innerHTML = validSubmissions.map((submission, index) => {
         const answers = Array.isArray(submission.answers) ? submission.answers : [];
         const rows = answers.map(answer => `
           <tr>
@@ -79,7 +83,7 @@
 
         return `
           <section class="card">
-            <h2>提交 ${submissions.length - index}</h2>
+            <h2>提交 ${validSubmissions.length - index}</h2>
             <p class="muted">提交时间：${submission.submittedAt || '-'}</p>
             <table>
               <thead>

@@ -219,6 +219,17 @@
       }, 2000);
     }
 
+    function showRedirectScreen() {
+      document.querySelector(".wrap").innerHTML = `
+        <section class="hero">
+          <div class="hero-copy">
+            <h1>提交成功</h1>
+            <div class="hero-note-inline">页面跳转中...</div>
+          </div>
+        </section>
+      `;
+    }
+
     function renderOrders(orders) {
       currentOrders = orders;
       ordersEl.innerHTML = orders.map((order, index) => {
@@ -294,9 +305,10 @@
         if (!response.ok) {
           throw new Error(payload.error || "提交失败");
         }
-        setStatus(`提交成功，已保存 ${answers.length} 个订单的选择结果。`);
-        showToast("提交成功，可以点击刷新继续参与");
-        await loadOrders();
+        showRedirectScreen();
+        window.setTimeout(() => {
+          window.location.href = "/";
+        }, 1200);
       } catch (error) {
         setStatus(error.message, true);
         showToast(error.message);
