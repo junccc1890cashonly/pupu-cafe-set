@@ -7,6 +7,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
+from http.server import BaseHTTPRequestHandler
 from pathlib import Path
 from typing import Any
 
@@ -14,31 +15,8 @@ from typing import Any
 LOCAL_DB = Path(__file__).resolve().parent.parent / "data" / "submissions.sqlite3"
 
 
-def _json_response(body: dict[str, Any], status: int = 200) -> tuple[str, int, dict[str, str]]:
-    return (
-        json.dumps(body, ensure_ascii=False),
-        status,
-        {
-            "Content-Type": "application/json; charset=utf-8",
-            "Cache-Control": "no-store",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-            "Access-Control-Allow-Headers": "Content-Type",
-        },
-    )
-
-
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
-
-
-def _load_json_request(request) -> dict[str, Any]:
-    raw = request.body
-    if isinstance(raw, bytes):
-        raw = raw.decode("utf-8")
-    if not raw:
-        return {}
-    return json.loads(raw)
 
 
 def _kv_config() -> tuple[str, str] | None:
@@ -136,25 +114,42 @@ def _read_records() -> tuple[list[dict[str, Any]], str]:
     return _read_from_sqlite(), "sqlite"
 
 
-def handler(request):
-    if request.method == "OPTIONS":
-        return _json_response({}, 204)
+class handler(BaseHTTPRequestHandler):
+    def _send_json(self, payload: dict, status: int = 200) -> None:
+        body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Cache-Control", "no-store")
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.end_headers()
+        self.wfile.write(body)
 
-    if request.method == "GET":
+    def do_OPTIONS(self) -> None:
+        self.send_response(204)
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.end_headers()
+
+    def do_GET(self) -> None:
         records, storage = _read_records()
-        return _json_response({"storage": storage, "submissions": records})
+        self._send_json({"storage": storage, "submissions": records})
 
-    if request.method != "POST":
-        return _json_response({"error": "Method not allowed"}, 405)
+    def do_POST(self) -> None:
+        content_length = int(self.headers.get("Content-Length", "0"))
+        raw = self.rfile.read(content_length).decode("utf-8") if content_length else "{}"
+        payload = json.loads(raw)
+        answers = payload.get("answers", [])
 
-    payload = _load_json_request(request)
-    answers = payload.get("answers", [])
-    if not isinstance(answers, list) or not answers:
-        return _json_response({"error": "answers is required"}, 400)
+        if not isinstance(answers, list) or not answers:
+            self._send_json({"error": "answers is required"}, 400)
+            return
 
-    record = {
-        "submittedAt": _now_iso(),
-        "answers": answers,
-    }
-    storage = _save_record(record)
-    return _json_response({"ok": True, "storage": storage, "submittedAt": record["submittedAt"]}, 201)
+        record = {
+            "submittedAt": _now_iso(),
+            "answers": answers,
+        }
+        storage = _save_record(record)
+        self._send_json({"ok": True, "storage": storage, "submittedAt": record["submittedAt"]}, 201)

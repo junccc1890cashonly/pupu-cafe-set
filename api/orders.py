@@ -2,48 +2,46 @@ from __future__ import annotations
 
 import json
 import random
+from http.server import BaseHTTPRequestHandler
 from pathlib import Path
-from typing import Any
 
 
 DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "orders.json"
 
 
-def _json_response(body: dict[str, Any], status: int = 200) -> tuple[str, int, dict[str, str]]:
-    return (
-        json.dumps(body, ensure_ascii=False),
-        status,
-        {
-            "Content-Type": "application/json; charset=utf-8",
-            "Cache-Control": "no-store",
-            "Access-Control-Allow-Origin": "*",
-        },
-    )
+class handler(BaseHTTPRequestHandler):
+    def _send_json(self, payload: dict, status: int = 200) -> None:
+        body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Cache-Control", "no-store")
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.end_headers()
+        self.wfile.write(body)
 
+    def do_OPTIONS(self) -> None:
+        self.send_response(204)
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.end_headers()
 
-def handler(request):
-    if request.method == "OPTIONS":
-        return (
-            "",
-            204,
+    def do_GET(self) -> None:
+        payload = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+        orders = payload["orders"]
+        sample_size = min(10, len(orders))
+        selected = random.sample(orders, sample_size)
+
+        sampled_orders = []
+        for order in selected:
+            copied = dict(order)
+            base = int(copied["simulatedCutlery"])
+            copied["options"] = [base + step for step in range(0, 6)]
+            sampled_orders.append(copied)
+
+        self._send_json(
             {
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "GET, OPTIONS",
-                "Access-Control-Allow-Headers": "Content-Type",
-            },
+                "meta": payload["meta"],
+                "orders": sampled_orders,
+            }
         )
-
-    payload = json.loads(DATA_FILE.read_text(encoding="utf-8"))
-    orders = payload["orders"]
-    sample_size = min(10, len(orders))
-    selected = random.sample(orders, sample_size)
-    for order in selected:
-        base = int(order["simulatedCutlery"])
-        order["options"] = [base + step for step in range(0, 6)]
-
-    return _json_response(
-        {
-            "meta": payload["meta"],
-            "orders": selected,
-        }
-    )
