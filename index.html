@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中式餐具包调研</title>
+  <style>
+    :root {
+      --bg: #f5f1e8;
+      --card: #fffdf8;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --line: #e8ddca;
+      --accent: #8f5f27;
+      --accent-soft: #f7ead3;
+      --success: #1f7a4f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(180deg, #f6efe1 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+    .hero, .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 12px 28px rgba(95, 71, 35, 0.07);
+    }
+    .hero { padding: 28px; }
+    .hero p { color: var(--muted); margin: 8px 0 0; }
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .toolbar a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .button {
+      border: none;
+      border-radius: 999px;
+      padding: 12px 18px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .button-primary {
+      background: linear-gradient(90deg, #9f6d2f, #7c4c1a);
+      color: white;
+    }
+    .button-secondary {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .status {
+      margin-top: 14px;
+      min-height: 24px;
+      color: var(--success);
+      font-weight: 600;
+    }
+    .list {
+      display: grid;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .card {
+      padding: 20px;
+    }
+    .order-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .order-title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .pill {
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      background: #fbf3e5;
+      color: #7a5322;
+      border: 1px solid #eedec2;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      padding: 10px 8px;
+      border-bottom: 1px solid #efe5d5;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th {
+      color: #6b5a43;
+      background: #fcf7ed;
+    }
+    .options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #fffaf1;
+      border: 1px solid #ecdcc1;
+      border-radius: 14px;
+      padding: 12px 14px;
+      cursor: pointer;
+    }
+    .option input { transform: scale(1.15); }
+    .option strong { display: block; }
+    .muted { color: var(--muted); }
+    @media (max-width: 720px) {
+      .options { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>中式餐具包调研</h1>
+      <p>每次随机展示 10 个 <code>diff &gt;= 5</code> 的订单。请你根据订单明细判断，这个订单合理需要多少个中式餐具包。</p>
+      <div class="toolbar">
+        <button id="submitButton" class="button button-primary">提交</button>
+        <button id="refreshButton" class="button button-secondary">刷新 10 个订单</button>
+        <a href="/submissions">查看用户提交结果</a>
+      </div>
+      <div id="status" class="status"></div>
+    </section>
+
+    <section id="orders" class="list"></section>
+  </div>
+
+  <script>
+    const ordersEl = document.getElementById("orders");
+    const statusEl = document.getElementById("status");
+    const submitButton = document.getElementById("submitButton");
+    const refreshButton = document.getElementById("refreshButton");
+    let currentOrders = [];
+
+    function setStatus(text, isError = false) {
+      statusEl.textContent = text;
+      statusEl.style.color = isError ? "#b42318" : "#1f7a4f";
+    }
+
+    function renderOrders(orders) {
+      currentOrders = orders;
+      ordersEl.innerHTML = orders.map((order, index) => {
+        const rows = order.items.map(item => `
+          <tr>
+            <td>${item.name}</td>
+            <td>${item.quantity}</td>
+            <td>${item.category}</td>
+          </tr>
+        `).join("");
+
+        const options = order.options.map((value, optionIndex) => `
+          <label class="option">
+            <input type="radio" name="order-${index}" value="${value}">
+            <span>
+              <strong>${value} 个中式餐具包</strong>
+              <span class="muted">${optionIndex === 0 ? "仿真中式餐具包数量" : `仿真中式餐具包数量 + ${optionIndex}`}</span>
+            </span>
+          </label>
+        `).join("");
+
+        return `
+          <article class="card">
+            <div class="order-header">
+              <div class="order-title">${order.orderNo}</div>
+              <div class="meta">
+                <span class="pill">仿真值 ${order.simulatedCutlery}</span>
+                <span class="pill">实际值 ${order.actualCutlery}</span>
+                <span class="pill">商家按量提供 ${order.merchantCutlery}</span>
+                <span class="pill">diff ${order.diff}</span>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>商品名称</th>
+                  <th>商品数量</th>
+                  <th>三级财务类别</th>
+                </tr>
+              </thead>
+              <tbody>${rows}</tbody>
+            </table>
+            <div class="options">${options}</div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    async function loadOrders() {
+      setStatus("正在刷新订单...");
+      ordersEl.innerHTML = "";
+      const response = await fetch("/api/orders");
+      const payload = await response.json();
+      renderOrders(payload.orders);
+      setStatus(`已随机展示 ${payload.orders.length} 个订单，请逐个选择。`);
+    }
+
+    function collectAnswers() {
+      return currentOrders.map((order, index) => {
+        const checked = document.querySelector(`input[name="order-${index}"]:checked`);
+        if (!checked) {
+          throw new Error(`订单 ${order.orderNo} 还没有选择结果`);
+        }
+        return {
+          orderNo: order.orderNo,
+          selectedCutlery: Number(checked.value),
+          simulatedCutlery: order.simulatedCutlery,
+          actualCutlery: order.actualCutlery,
+          merchantCutlery: order.merchantCutlery,
+          diff: order.diff
+        };
+      });
+    }
+
+    async function submitAnswers() {
+      try {
+        const answers = collectAnswers();
+        setStatus("正在提交...");
+        const response = await fetch("/api/submissions", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ answers })
+        });
+        const payload = await response.json();
+        if (!response.ok) {
+          throw new Error(payload.error || "提交失败");
+        }
+        setStatus(`提交成功，已保存 10 个订单的选择结果。存储方式：${payload.storage}`);
+      } catch (error) {
+        setStatus(error.message, true);
+      }
+    }
+
+    submitButton.addEventListener("click", submitAnswers);
+    refreshButton.addEventListener("click", loadOrders);
+    loadOrders().catch(error => setStatus(error.message, true));
+  </script>
+</body>
+</html>
