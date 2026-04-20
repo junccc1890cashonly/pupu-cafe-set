@@ -77,30 +77,6 @@
     .card {
       padding: 20px;
     }
-    .order-header {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 14px;
-    }
-    .order-title {
-      font-size: 20px;
-      font-weight: 700;
-    }
-    .meta {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .pill {
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-      background: #fbf3e5;
-      color: #7a5322;
-      border: 1px solid #eedec2;
-    }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -176,7 +152,6 @@
           <tr>
             <td>${item.name}</td>
             <td>${item.quantity}</td>
-            <td>${item.category}</td>
           </tr>
         `).join("");
 
@@ -192,21 +167,11 @@
 
         return `
           <article class="card">
-            <div class="order-header">
-              <div class="order-title">${order.orderNo}</div>
-              <div class="meta">
-                <span class="pill">仿真值 ${order.simulatedCutlery}</span>
-                <span class="pill">实际值 ${order.actualCutlery}</span>
-                <span class="pill">商家按量提供 ${order.merchantCutlery}</span>
-                <span class="pill">diff ${order.diff}</span>
-              </div>
-            </div>
             <table>
               <thead>
                 <tr>
                   <th>商品名称</th>
                   <th>商品数量</th>
-                  <th>三级财务类别</th>
                 </tr>
               </thead>
               <tbody>${rows}</tbody>
