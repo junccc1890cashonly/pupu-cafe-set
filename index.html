@@ -311,8 +311,24 @@
       const sampleSize = Math.min(10, orders.length);
       const sampled = [...orders].sort(() => Math.random() - 0.5).slice(0, sampleSize).map(order => {
         const base = Number(order.simulatedCutlery);
-        const options = [0, base, base + 1, base + 2, base + 3, base + 4]
-          .filter((value, idx, arr) => arr.indexOf(value) === idx);
+        const options = [];
+        const seen = new Set();
+
+        function appendOption(value) {
+          if (seen.has(value)) return;
+          seen.add(value);
+          options.push(value);
+        }
+
+        appendOption(0);
+        appendOption(base);
+
+        let step = 1;
+        while (options.length < 6) {
+          appendOption(base + step);
+          step += 1;
+        }
+
         return {
           ...order,
           options
