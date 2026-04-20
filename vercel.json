@@ -1,3 +1,13 @@
 {
-  "cleanUrls": false
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/submissions",
+      "destination": "/submissions.html"
+    }
+  ]
 }
