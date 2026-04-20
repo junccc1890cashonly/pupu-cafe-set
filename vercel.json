@@ -1,9 +1,3 @@
 {
-  "routes": [
-    { "src": "/api/orders", "dest": "/api/orders.py" },
-    { "src": "/api/submissions", "dest": "/api/submissions.py" },
-    { "src": "/submissions", "dest": "/submissions.html" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/$1" }
-  ]
+  "cleanUrls": false
 }

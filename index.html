@@ -149,7 +149,7 @@
       <div class="toolbar">
         <button id="submitButton" class="button button-primary">提交</button>
         <button id="refreshButton" class="button button-secondary">刷新 10 个订单</button>
-        <a href="/submissions">查看用户提交结果</a>
+        <a href="/submissions.html">查看用户提交结果</a>
       </div>
       <div id="status" class="status"></div>
     </section>
@@ -220,10 +220,19 @@
     async function loadOrders() {
       setStatus("正在刷新订单...");
       ordersEl.innerHTML = "";
-      const response = await fetch("/api/orders");
+      const response = await fetch("/data/orders.json");
       const payload = await response.json();
-      renderOrders(payload.orders);
-      setStatus(`已随机展示 ${payload.orders.length} 个订单，请逐个选择。`);
+      const orders = payload.orders || [];
+      const sampleSize = Math.min(10, orders.length);
+      const sampled = [...orders].sort(() => Math.random() - 0.5).slice(0, sampleSize).map(order => {
+        const base = Number(order.simulatedCutlery);
+        return {
+          ...order,
+          options: [0, 1, 2, 3, 4, 5].map(step => base + step)
+        };
+      });
+      renderOrders(sampled);
+      setStatus(`已随机展示 ${sampled.length} 个订单，请逐个选择。`);
     }
 
     function collectAnswers() {
