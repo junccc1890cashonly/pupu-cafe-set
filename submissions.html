@@ -111,6 +111,19 @@
       return Number.isNaN(parsed) ? 0 : parsed;
     }
 
+    function formatSubmittedAt(value) {
+      const timestamp = parseSubmittedAt(value);
+      if (!timestamp) return "-";
+      const date = new Date(timestamp);
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      const hours = String(date.getHours()).padStart(2, "0");
+      const minutes = String(date.getMinutes()).padStart(2, "0");
+      const seconds = String(date.getSeconds()).padStart(2, "0");
+      return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+    }
+
     function render(submissions, storage) {
       const validSubmissions = submissions
         .filter(submission => Array.isArray(submission.answers) && submission.answers.length > 0)
@@ -148,7 +161,7 @@
         return `
           <section class="card">
             <h2>${index === 0 ? "最新提交" : `提交 ${index + 1}`}</h2>
-            <p class="muted">提交时间：${submission.submittedAt || '-'}</p>
+            <p class="muted">提交时间：${formatSubmittedAt(submission.submittedAt)}</p>
             <table>
               <thead>
                 <tr>
