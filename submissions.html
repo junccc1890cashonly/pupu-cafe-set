@@ -106,16 +106,25 @@
     }
     const refreshButton = document.getElementById("refreshButton");
 
+    function parseSubmittedAt(value) {
+      const parsed = Date.parse(value || "");
+      return Number.isNaN(parsed) ? 0 : parsed;
+    }
+
     function render(submissions, storage) {
-      const validSubmissions = submissions.filter(
-        submission => Array.isArray(submission.answers) && submission.answers.length > 0
-      ).sort((a, b) => {
-        const timeA = Date.parse(a.submittedAt || "");
-        const timeB = Date.parse(b.submittedAt || "");
-        const safeTimeA = Number.isNaN(timeA) ? 0 : timeA;
-        const safeTimeB = Number.isNaN(timeB) ? 0 : timeB;
-        return safeTimeB - safeTimeA;
-      });
+      const validSubmissions = submissions
+        .filter(submission => Array.isArray(submission.answers) && submission.answers.length > 0)
+        .map((submission, originalIndex) => ({
+          ...submission,
+          __sortTime: parseSubmittedAt(submission.submittedAt),
+          __originalIndex: originalIndex
+        }))
+        .sort((a, b) => {
+          if (b.__sortTime !== a.__sortTime) {
+            return b.__sortTime - a.__sortTime;
+          }
+          return b.__originalIndex - a.__originalIndex;
+        });
 
       if (!validSubmissions.length) {
         content.innerHTML = `<section class="card"><p>暂时还没有提交结果。</p><p class="muted">当前存储方式：${storage}</p></section>`;
@@ -138,7 +147,7 @@
 
         return `
           <section class="card">
-            <h2>提交 ${validSubmissions.length - index}</h2>
+            <h2>${index === 0 ? "最新提交" : `提交 ${index + 1}`}</h2>
             <p class="muted">提交时间：${submission.submittedAt || '-'}</p>
             <table>
               <thead>
