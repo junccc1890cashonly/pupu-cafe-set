@@ -64,21 +64,23 @@
       }
 
       content.innerHTML = submissions.map((submission, index) => {
-        const rows = submission.answers.map(answer => `
+        const answers = Array.isArray(submission.answers) ? submission.answers : [];
+        const rows = answers.map(answer => `
           <tr>
-            <td>${answer.orderNo}</td>
-            <td>${answer.selectedCutlery}</td>
-            <td>${answer.simulatedCutlery}</td>
-            <td>${answer.actualCutlery}</td>
-            <td>${answer.merchantCutlery}</td>
-            <td>${answer.diff}</td>
+            <td>${answer.orderNo ?? '-'}</td>
+            <td>${answer.selectedCutlery ?? '-'}</td>
+            <td>${answer.simulatedCutlery ?? '-'}</td>
+            <td>${answer.actualCutlery ?? '-'}</td>
+            <td>${answer.merchantCutlery ?? '-'}</td>
+            <td>${answer.diff ?? '-'}</td>
           </tr>
         `).join("");
+        const tableBody = rows || `<tr><td colspan="6" class="muted">这条提交记录没有可展示的答案明细。</td></tr>`;
 
         return `
           <section class="card">
             <h2>提交 ${submissions.length - index}</h2>
-            <p class="muted">提交时间：${submission.submittedAt}</p>
+            <p class="muted">提交时间：${submission.submittedAt || '-'}</p>
             <table>
               <thead>
                 <tr>
@@ -90,7 +92,7 @@
                   <th>diff</th>
                 </tr>
               </thead>
-              <tbody>${rows}</tbody>
+              <tbody>${tableBody}</tbody>
             </table>
           </section>
         `;
