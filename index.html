@@ -85,6 +85,26 @@
       color: var(--success);
       font-weight: 600;
     }
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 32px;
+      transform: translateX(-50%) translateY(16px);
+      background: rgba(31, 41, 55, 0.92);
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      box-shadow: 0 12px 24px rgba(31, 41, 55, 0.22);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 180ms ease, transform 180ms ease;
+      z-index: 1000;
+    }
+    .toast.is-visible {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
     .list {
       display: grid;
       gap: 16px;
@@ -93,6 +113,7 @@
     .footer-actions {
       display: flex;
       justify-content: center;
+      gap: 12px;
       margin-top: 24px;
     }
     .card {
@@ -167,19 +188,35 @@
     <section id="orders" class="list"></section>
     <div class="footer-actions">
       <button id="submitButtonBottom" class="button button-primary">提交</button>
+      <button id="refreshButtonBottom" class="button button-secondary">刷新</button>
     </div>
   </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script>
     const ordersEl = document.getElementById("orders");
     const statusEl = document.getElementById("status");
     const submitButtonBottom = document.getElementById("submitButtonBottom");
     const refreshButton = document.getElementById("refreshButton");
+    const refreshButtonBottom = document.getElementById("refreshButtonBottom");
+    const toastEl = document.getElementById("toast");
     let currentOrders = [];
+    let toastTimer = null;
 
     function setStatus(text, isError = false) {
       statusEl.textContent = text;
       statusEl.style.color = isError ? "#b42318" : "#1f7a4f";
+    }
+
+    function showToast(text) {
+      if (toastTimer) {
+        window.clearTimeout(toastTimer);
+      }
+      toastEl.textContent = text;
+      toastEl.classList.add("is-visible");
+      toastTimer = window.setTimeout(() => {
+        toastEl.classList.remove("is-visible");
+      }, 2000);
     }
 
     function renderOrders(orders) {
@@ -266,14 +303,17 @@
         if (!response.ok) {
           throw new Error(payload.error || "提交失败");
         }
-        setStatus(`提交成功，已保存 10 个订单的选择结果。存储方式：${payload.storage}`);
+        setStatus(`提交成功，已保存 ${answers.length} 个订单的选择结果。`);
+        showToast("提交成功，可以点击刷新继续参与");
       } catch (error) {
         setStatus(error.message, true);
+        showToast(error.message);
       }
     }
 
     submitButtonBottom.addEventListener("click", submitAnswers);
     refreshButton.addEventListener("click", loadOrders);
+    refreshButtonBottom.addEventListener("click", loadOrders);
     loadOrders().catch(error => setStatus(error.message, true));
   </script>
 </body>
