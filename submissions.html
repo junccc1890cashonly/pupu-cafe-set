@@ -109,7 +109,13 @@
     function render(submissions, storage) {
       const validSubmissions = submissions.filter(
         submission => Array.isArray(submission.answers) && submission.answers.length > 0
-      );
+      ).sort((a, b) => {
+        const timeA = Date.parse(a.submittedAt || "");
+        const timeB = Date.parse(b.submittedAt || "");
+        const safeTimeA = Number.isNaN(timeA) ? 0 : timeA;
+        const safeTimeB = Number.isNaN(timeB) ? 0 : timeB;
+        return safeTimeB - safeTimeA;
+      });
 
       if (!validSubmissions.length) {
         content.innerHTML = `<section class="card"><p>暂时还没有提交结果。</p><p class="muted">当前存储方式：${storage}</p></section>`;
