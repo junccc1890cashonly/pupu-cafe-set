@@ -291,10 +291,22 @@
     async function loadOrders() {
       setStatus("正在刷新订单...");
       ordersEl.innerHTML = "";
-      const response = await fetch("/api/orders");
+      clearInvalidState();
+      const response = await fetch(`/data/orders.json?t=${Date.now()}`);
       const payload = await response.json();
-      renderOrders(payload.orders);
-      setStatus(`已随机展示 ${payload.orders.length} 个订单，请逐个选择。`);
+      const orders = payload.orders || [];
+      const sampleSize = Math.min(10, orders.length);
+      const sampled = [...orders].sort(() => Math.random() - 0.5).slice(0, sampleSize).map(order => {
+        const base = Number(order.simulatedCutlery);
+        const options = [0, base, base + 1, base + 2, base + 3, base + 4]
+          .filter((value, idx, arr) => arr.indexOf(value) === idx);
+        return {
+          ...order,
+          options
+        };
+      });
+      renderOrders(sampled);
+      setStatus(`已随机展示 ${sampled.length} 个订单，请逐个选择。`);
     }
 
     function collectAnswers() {
@@ -330,7 +342,7 @@
         }
         showRedirectScreen();
         window.setTimeout(() => {
-          window.location.href = "/";
+          window.location.href = `/?t=${Date.now()}`;
         }, 1200);
       } catch (error) {
         setStatus(error.message, true);
