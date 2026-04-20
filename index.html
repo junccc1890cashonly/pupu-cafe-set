@@ -44,23 +44,18 @@
       flex: 1;
       min-width: 0;
     }
+    .hero-note-inline {
+      margin-top: 10px;
+      color: #6b5a43;
+      font-size: 14px;
+      line-height: 1.6;
+    }
     .hero-side {
-      width: 280px;
+      width: 200px;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       gap: 12px;
-    }
-    .hero-note {
-      width: 100%;
-      max-width: 280px;
-      padding: 14px 16px;
-      border-radius: 16px;
-      border: 1px solid #eadfc9;
-      background: #fcf7ed;
-      color: #6b5a43;
-      font-size: 14px;
-      line-height: 1.6;
     }
     .toolbar {
       display: flex;
@@ -156,12 +151,12 @@
       <div class="hero-layout">
         <div class="hero-copy">
           <h1>中式餐具包调研</h1>
+          <div class="hero-note-inline">
+            补充说明：中式餐具包包含一双筷子、一个勺子、一个牙签和一张纸巾。
+          </div>
           <div id="status" class="status"></div>
         </div>
         <div class="hero-side">
-          <div class="hero-note">
-            <strong>补充说明：</strong>中式餐具包包含一双筷子、一个勺子、一个牙签和一张纸巾。
-          </div>
           <div class="toolbar">
             <button id="refreshButton" class="button button-secondary">刷新 10 个订单</button>
           </div>
