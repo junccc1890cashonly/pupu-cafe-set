@@ -30,6 +30,14 @@
       flex-wrap: wrap;
       align-items: center;
     }
+    .hero-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
     .button {
       border: none;
       border-radius: 999px;
@@ -41,6 +49,10 @@
     .button-danger {
       background: linear-gradient(90deg, #c24130, #9f2d20);
       color: white;
+    }
+    .button-secondary {
+      background: #f7ead3;
+      color: #8f5f27;
     }
     .card { padding: 20px; margin-top: 16px; }
     table {
@@ -68,10 +80,13 @@
     <section class="hero">
       <h1>用户提交结果</h1>
       <p class="muted">这里展示所有用户已提交的选择结果。每次提交包含 10 个订单的答案。</p>
-      <div class="toolbar">
-        <button id="clearButton" class="button button-danger">清空提交结果</button>
+      <div class="hero-actions">
+        <div class="toolbar">
+          <button id="clearButton" class="button button-danger">清空提交结果</button>
+          <button id="refreshButton" class="button button-secondary">刷新</button>
+        </div>
+        <a href="/">返回调研首页</a>
       </div>
-      <a href="/">返回调研首页</a>
     </section>
     <section id="content"></section>
   </div>
@@ -79,6 +94,7 @@
   <script>
     const content = document.getElementById("content");
     const clearButton = document.getElementById("clearButton");
+    const refreshButton = document.getElementById("refreshButton");
 
     function render(submissions, storage) {
       const validSubmissions = submissions.filter(
@@ -153,6 +169,7 @@
     }
 
     clearButton.addEventListener("click", clearSubmissions);
+    refreshButton.addEventListener("click", load);
     load().catch(error => {
       content.innerHTML = `<section class="card"><p>加载失败：${error.message}</p></section>`;
     });
