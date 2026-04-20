@@ -4,7 +4,6 @@ import json
 import os
 import sqlite3
 import urllib.error
-import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler
@@ -27,32 +26,39 @@ def _kv_config() -> tuple[str, str] | None:
     return None
 
 
-def _kv_request(path: str, payload: dict[str, Any] | None = None) -> Any:
+def _kv_request(payload: list[Any]) -> Any:
     cfg = _kv_config()
     if cfg is None:
         raise RuntimeError("KV not configured")
     base_url, token = cfg
-    url = f"{base_url}{path}"
-    body = None
-    headers = {"Authorization": f"Bearer {token}"}
-    if payload is not None:
-        body = json.dumps(payload).encode("utf-8")
-        headers["Content-Type"] = "application/json"
-    req = urllib.request.Request(url=url, data=body, headers=headers, method="POST")
+    body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json",
+    }
+    req = urllib.request.Request(url=base_url, data=body, headers=headers, method="POST")
     with urllib.request.urlopen(req, timeout=10) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
 
 def _save_to_kv(record: dict[str, Any]) -> None:
     key = "cutlery-survey:submissions"
-    _kv_request(f"/rpush/{urllib.parse.quote(key, safe='')}", {"items": [json.dumps(record, ensure_ascii=False)]})
+    _kv_request(["RPUSH", key, json.dumps(record, ensure_ascii=False)])
 
 
 def _read_from_kv() -> list[dict[str, Any]]:
     key = "cutlery-survey:submissions"
-    response = _kv_request(f"/lrange/{urllib.parse.quote(key, safe='')}/0/-1")
+    response = _kv_request(["LRANGE", key, 0, -1])
     raw_items = response.get("result", [])
-    return [json.loads(item) for item in raw_items]
+    parsed: list[dict[str, Any]] = []
+    for item in raw_items:
+        try:
+            value = json.loads(item)
+            if isinstance(value, dict):
+                parsed.append(value)
+        except (TypeError, json.JSONDecodeError):
+            continue
+    return parsed
 
 
 def _db_path() -> Path:

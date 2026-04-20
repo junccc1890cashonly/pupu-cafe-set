@@ -296,6 +296,7 @@
         }
         setStatus(`提交成功，已保存 ${answers.length} 个订单的选择结果。`);
         showToast("提交成功，可以点击刷新继续参与");
+        await loadOrders();
       } catch (error) {
         setStatus(error.message, true);
         showToast(error.message);
