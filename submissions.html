@@ -94,6 +94,16 @@
   <script>
     const content = document.getElementById("content");
     const clearButton = document.getElementById("clearButton");
+
+    async function readJsonSafely(response) {
+      const text = await response.text();
+      try {
+        return JSON.parse(text);
+      } catch (error) {
+        const preview = text.slice(0, 160).replace(/\s+/g, " ").trim();
+        throw new Error(preview || "接口返回了非 JSON 内容");
+      }
+    }
     const refreshButton = document.getElementById("refreshButton");
 
     function render(submissions, storage) {
@@ -144,7 +154,10 @@
 
     async function load() {
       const response = await fetch("/api/submissions");
-      const payload = await response.json();
+      const payload = await readJsonSafely(response);
+      if (!response.ok) {
+        throw new Error(payload.error || "加载失败");
+      }
       render(payload.submissions || [], payload.storage || "unknown");
     }
 
@@ -155,7 +168,7 @@
       clearButton.textContent = "清空中...";
       try {
         const response = await fetch("/api/submissions", { method: "DELETE" });
-        const payload = await response.json();
+        const payload = await readJsonSafely(response);
         if (!response.ok) {
           throw new Error(payload.error || "清空失败");
         }
