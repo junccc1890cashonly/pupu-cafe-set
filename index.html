@@ -45,19 +45,22 @@
       min-width: 0;
     }
     .hero-side {
-      width: 240px;
+      width: 280px;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       gap: 12px;
     }
-    .hero-image {
+    .hero-note {
       width: 100%;
-      max-width: 220px;
-      border-radius: 18px;
+      max-width: 280px;
+      padding: 14px 16px;
+      border-radius: 16px;
       border: 1px solid #eadfc9;
-      object-fit: cover;
-      background: #f8f3ea;
+      background: #fcf7ed;
+      color: #6b5a43;
+      font-size: 14px;
+      line-height: 1.6;
     }
     .toolbar {
       display: flex;
@@ -156,11 +159,9 @@
           <div id="status" class="status"></div>
         </div>
         <div class="hero-side">
-          <img
-            class="hero-image"
-            src="/img_v3_0210u_9b0f6cd1-e6f7-4c3f-9653-8e4b62a306fg.jpg"
-            alt="中式餐具包示意图"
-          />
+          <div class="hero-note">
+            <strong>补充说明：</strong>中式餐具包包含一双筷子、一个勺子、一个牙签和一张纸巾。
+          </div>
           <div class="toolbar">
             <button id="refreshButton" class="button button-secondary">刷新 10 个订单</button>
           </div>
