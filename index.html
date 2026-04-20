@@ -34,11 +34,34 @@
       box-shadow: 0 12px 28px rgba(95, 71, 35, 0.07);
     }
     .hero { padding: 28px; }
-    .hero p { color: var(--muted); margin: 8px 0 0; }
+    .hero-layout {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    .hero-copy {
+      flex: 1;
+      min-width: 0;
+    }
+    .hero-side {
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+    }
+    .hero-image {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 18px;
+      border: 1px solid #eadfc9;
+      object-fit: cover;
+      background: #f8f3ea;
+    }
     .toolbar {
       display: flex;
       gap: 12px;
-      margin-top: 16px;
       flex-wrap: wrap;
       align-items: center;
     }
@@ -114,17 +137,35 @@
     .muted { color: var(--muted); }
     @media (max-width: 720px) {
       .options { grid-template-columns: 1fr; }
+      .hero-layout {
+        flex-direction: column;
+      }
+      .hero-side {
+        width: 100%;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="hero">
-      <h1>中式餐具包调研</h1>
-      <div class="toolbar">
-        <button id="refreshButton" class="button button-secondary">刷新 10 个订单</button>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <h1>中式餐具包调研</h1>
+          <div id="status" class="status"></div>
+        </div>
+        <div class="hero-side">
+          <img
+            class="hero-image"
+            src="/img_v3_0210u_9b0f6cd1-e6f7-4c3f-9653-8e4b62a306fg.jpg"
+            alt="中式餐具包示意图"
+          />
+          <div class="toolbar">
+            <button id="refreshButton" class="button button-secondary">刷新 10 个订单</button>
+          </div>
+        </div>
       </div>
-      <div id="status" class="status"></div>
     </section>
 
     <section id="orders" class="list"></section>
