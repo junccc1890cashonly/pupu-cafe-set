@@ -119,6 +119,14 @@
     .card {
       padding: 20px;
     }
+    .card.is-invalid {
+      border-color: #ef4444;
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+    }
+    .card.is-invalid th:first-child,
+    .card.is-invalid td:first-child {
+      color: #b42318;
+    }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -250,7 +258,7 @@
         `).join("");
 
         return `
-          <article class="card">
+          <article class="card" data-order-index="${index}">
             <table>
               <thead>
                 <tr>
@@ -264,6 +272,20 @@
           </article>
         `;
       }).join("");
+    }
+
+    function clearInvalidState() {
+      document.querySelectorAll(".card.is-invalid").forEach(card => {
+        card.classList.remove("is-invalid");
+      });
+    }
+
+    function markInvalidOrder(index) {
+      clearInvalidState();
+      const card = document.querySelector(`[data-order-index="${index}"]`);
+      if (!card) return;
+      card.classList.add("is-invalid");
+      card.scrollIntoView({ behavior: "smooth", block: "center" });
     }
 
     async function loadOrders() {
@@ -288,6 +310,7 @@
       return currentOrders.map((order, index) => {
         const checked = document.querySelector(`input[name="order-${index}"]:checked`);
         if (!checked) {
+          markInvalidOrder(index);
           throw new Error("还有订单没有选择结果");
         }
         return {
@@ -327,6 +350,11 @@
     submitButtonBottom.addEventListener("click", submitAnswers);
     refreshButton.addEventListener("click", loadOrders);
     refreshButtonBottom.addEventListener("click", loadOrders);
+    ordersEl.addEventListener("change", event => {
+      if (event.target && event.target.matches('input[type="radio"]')) {
+        clearInvalidState();
+      }
+    });
     loadOrders().catch(error => setStatus(error.message, true));
   </script>
 </body>
