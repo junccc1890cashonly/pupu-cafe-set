@@ -1,0 +1,10 @@
+{
+  "routes": [
+    { "src": "/api/orders", "dest": "/api/orders.py" },
+    { "src": "/api/submissions", "dest": "/api/submissions.py" },
+    { "src": "/", "dest": "/public/index.html" },
+    { "src": "/submissions", "dest": "/public/submissions.html" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ]
+}

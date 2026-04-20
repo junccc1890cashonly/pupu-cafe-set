@@ -1,0 +1,4526 @@
+{
+  "meta": {
+    "source_csv": "/Users/junc/Desktop/PUPU3/项目：餐饮配件/【餐饮】餐饮项目C端订单餐具配置一次性取数「20260224-20260319」_v4_562371776253148455_20260416102013.csv",
+    "order_count": 146,
+    "rule_summary": [
+      "汤类不纳入配菜重量",
+      "餐具选择类型=无需餐具时仿真值为0",
+      "套餐组合数量全部计入基础包",
+      "套餐外配菜按每650g增加1个中式餐具包"
+    ]
+  },
+  "orders": [
+    {
+      "orderNo": "#0108771984277438",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 9,
+      "actualCutlery": 12,
+      "simulatedCutlery": 6,
+      "comboQty": 0,
+      "sideWeight": 4040,
+      "diff": 6,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "三鲜汤",
+          "quantity": 5,
+          "category": "主菜类"
+        },
+        {
+          "name": "干锅花菜",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "外婆菜炒四季豆",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "黑椒牛肉意面",
+          "quantity": 3,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "经典酸辣粉",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "香干炒肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 5,
+          "category": "主食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "韩式泡菜肥牛意大利面",
+          "quantity": 2,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "黑椒猪仔骨",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "经典鱼丸汤",
+          "quantity": 5,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772014470083",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772160749157",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "三鲜汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖苦瓜黄豆排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖土猪肉汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "经典鱼丸汤",
+          "quantity": 3,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772161163265",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 1,
+      "sideWeight": 1080,
+      "diff": 5,
+      "items": [
+        {
+          "name": "清炒菜心",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖红菇土猪肉汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "脆皮烧鸭+蜜汁叉烧饭（双拼）",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772165434003",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 6,
+      "actualCutlery": 9,
+      "simulatedCutlery": 4,
+      "comboQty": 0,
+      "sideWeight": 3170,
+      "diff": 5,
+      "items": [
+        {
+          "name": "农家辣椒小炒肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "清水韭菜豆芽",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "芙蓉蒸蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 5,
+          "category": "主食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "浓醇香菇豆腐汤",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "牛肉麻婆豆腐",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白菜炖豆腐",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772335863142",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1260,
+      "diff": 5,
+      "items": [
+        {
+          "name": "鸡肉咖喱饭",
+          "quantity": 2,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "手作荔枝肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "外婆菜炒四季豆",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "苹果大红袍",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "酸汤安格斯肥牛（小份）",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "羽衣甘蓝奇亚籽酸奶昔",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772336238273",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 10,
+      "actualCutlery": 12,
+      "simulatedCutlery": 7,
+      "comboQty": 0,
+      "sideWeight": 4570,
+      "diff": 5,
+      "items": [
+        {
+          "name": "手作荔枝肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "青椒炒蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "农家辣椒小炒肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "莴笋干炒肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "清水韭菜豆芽",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 10,
+          "category": "主食类"
+        },
+        {
+          "name": "麻辣口水鸡（单份）",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "啤酒鸭",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白菜炖豆腐",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772338171307",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 1,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        },
+        {
+          "name": "脆皮烧鸭饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "黑糖珍珠奶茶（热）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772342368064",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 1,
+      "sideWeight": 1630,
+      "diff": 5,
+      "items": [
+        {
+          "name": "农家辣椒小炒肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "脆皮烧鸭+蜜汁叉烧饭（双拼）",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        },
+        {
+          "name": "肉沫茄子",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772507933395",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 15,
+      "actualCutlery": 15,
+      "simulatedCutlery": 9,
+      "comboQty": 5,
+      "sideWeight": 3000,
+      "diff": 6,
+      "items": [
+        {
+          "name": "蜜汁鸭腿饭",
+          "quantity": 5,
+          "category": "套餐组合"
+        },
+        {
+          "name": "广式腊味炒饭",
+          "quantity": 10,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772523242443",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 8,
+      "actualCutlery": 11,
+      "simulatedCutlery": 3,
+      "comboQty": 0,
+      "sideWeight": 2560,
+      "diff": 8,
+      "items": [
+        {
+          "name": "毛豆肉丁",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "红烧带鱼",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 7,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772536707375",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "每日鲜烤榴莲蜜薯200g±30g",
+          "quantity": 5,
+          "category": "环球小食类"
+        },
+        {
+          "name": "经典鱼丸汤",
+          "quantity": 5,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772592698202",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 640,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "清炒菜心",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "手作荔枝肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "黑椒鸡块",
+          "quantity": 1,
+          "category": "环球小食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772678691435",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 9,
+      "actualCutlery": 10,
+      "simulatedCutlery": 5,
+      "comboQty": 2,
+      "sideWeight": 2290,
+      "diff": 5,
+      "items": [
+        {
+          "name": "常德香辣牛肉粉",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "鲜炖目鱼筒骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖苦瓜黄豆排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "农家辣椒小炒肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖土猪肉汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "清水韭菜豆芽",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 4,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "脆皮烧鸭+蜜汁叉烧饭（双拼）",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "芙蓉蒸蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "浓醇香菇豆腐汤",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "台式经典卤肉饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772767513167",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 8,
+      "simulatedCutlery": 2,
+      "comboQty": 0,
+      "sideWeight": 1600,
+      "diff": 6,
+      "items": [
+        {
+          "name": "鸡肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "红糖大馒头",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "酸辣土豆丝",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "苹果茉莉花茶",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        },
+        {
+          "name": "麻辣口水鸡（单份）",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "白菜炖豆腐",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772850958371",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 20,
+      "actualCutlery": 20,
+      "simulatedCutlery": 14,
+      "comboQty": 10,
+      "sideWeight": 3175,
+      "diff": 6,
+      "items": [
+        {
+          "name": "鸡肉咖喱饭",
+          "quantity": 5,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "麻辣口水鸡饭",
+          "quantity": 5,
+          "category": "套餐组合"
+        },
+        {
+          "name": "蜜汁叉烧饭",
+          "quantity": 5,
+          "category": "套餐组合"
+        },
+        {
+          "name": "隆江猪脚饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "隆江猪脚饭",
+          "quantity": 4,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772854441262",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 8,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 0,
+      "sideWeight": 2400,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 8,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772860626376",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 8,
+      "simulatedCutlery": 2,
+      "comboQty": 0,
+      "sideWeight": 1500,
+      "diff": 6,
+      "items": [
+        {
+          "name": "椰冻生椰拿铁（冰）",
+          "quantity": 1,
+          "category": "现制咖啡"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 5,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108772876612175",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 8,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 0,
+      "sideWeight": 2400,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 8,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773048770151",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 850,
+      "diff": 6,
+      "items": [
+        {
+          "name": "鸡肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "安格斯肥牛饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "香辣孜然鸡肉拌饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773057986348",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1200,
+      "diff": 6,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773110190474",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773131850059",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 0,
+      "sideWeight": 2260,
+      "diff": 5,
+      "items": [
+        {
+          "name": "外婆菜炒四季豆",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鸡蛋肉丝炒河粉",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "农家一碗香",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        },
+        {
+          "name": "笋干炒肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "清炒油麦菜",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773139648152",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "莲藕排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖土猪肉汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773542397361",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 1,
+      "sideWeight": 300,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "台式经典卤肉饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773545726330",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 450,
+      "diff": 5,
+      "items": [
+        {
+          "name": "香茅鸡扒谷物碗（热）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "香辣孜然鸡肉拌饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "慢煮十年老白茶（热）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773630764297",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 7,
+      "actualCutlery": 10,
+      "simulatedCutlery": 5,
+      "comboQty": 1,
+      "sideWeight": 2890,
+      "diff": 5,
+      "items": [
+        {
+          "name": "清炒菜心",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鹌鹑蛋红烧肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "清炒花菜",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "潮汕肉卷（单份）",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 7,
+          "category": "主食类"
+        },
+        {
+          "name": "外婆菜炒蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773635224466",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 1,
+      "sideWeight": 1590,
+      "diff": 5,
+      "items": [
+        {
+          "name": "蒜蓉菠菜",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "莴笋干炒肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        },
+        {
+          "name": "香菇焖鸡套餐（含米饭+半荤菜+时蔬）",
+          "quantity": 1,
+          "category": "套餐组合"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773716429119",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "鲜炖莲子猪肚汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773738031318",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773809940336",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "香茅鸡扒谷物碗",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "原味鸡扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773893025271",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 990,
+      "diff": 5,
+      "items": [
+        {
+          "name": "椰冻生椰拿铁（冰）",
+          "quantity": 1,
+          "category": "现制咖啡"
+        },
+        {
+          "name": "鲜炖苦瓜黄豆排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "爆炒猪肝",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "蒜蓉地瓜叶",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0108773893573363",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1110,
+      "diff": 5,
+      "items": [
+        {
+          "name": "广式腊味炒饭",
+          "quantity": 3,
+          "category": "主食类"
+        },
+        {
+          "name": "肉丸萝卜汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "清水韭菜豆芽",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "青花椒烤鸡（半只）",
+          "quantity": 1,
+          "category": "现烤烘焙"
+        },
+        {
+          "name": "经典鱼丸汤",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0117772763389199",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 630,
+      "diff": 5,
+      "items": [
+        {
+          "name": "鲜炖莲子猪肚汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "蒜蓉菠菜",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "肉丸萝卜汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "奥尔良烤翅（1对）",
+          "quantity": 1,
+          "category": "环球小食类"
+        },
+        {
+          "name": "啤酒鸭",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "黑椒猪仔骨",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0117772881402434",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 10,
+      "actualCutlery": 13,
+      "simulatedCutlery": 8,
+      "comboQty": 2,
+      "sideWeight": 4350,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "手作荔枝肉（大份）",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "农家一碗香",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "爆炒猪肝",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "地三鲜",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "叉烧（单份）",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "清水韭菜豆芽",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "潮汕肉卷（单份）",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 8,
+          "category": "主食类"
+        },
+        {
+          "name": "干锅土豆片",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "五谷杂粮饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "香卤海带结",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0117772944441443",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "芝士培根土豆泥",
+          "quantity": 1,
+          "category": "环球小食类"
+        },
+        {
+          "name": "番茄肉酱鸡扒意面",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "新鲜草莓酸奶昔",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0117773545858389",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "鸡肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "奶油蘑菇浓汤",
+          "quantity": 2,
+          "category": "奶油浓汤"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0117773831697323",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 6,
+      "actualCutlery": 9,
+      "simulatedCutlery": 3,
+      "comboQty": 1,
+      "sideWeight": 1700,
+      "diff": 6,
+      "items": [
+        {
+          "name": "莴笋干炒肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 5,
+          "category": "主食类"
+        },
+        {
+          "name": "脆皮烧鸭饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118771905025401",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 400,
+      "diff": 5,
+      "items": [
+        {
+          "name": "小黄油拿铁（热）",
+          "quantity": 1,
+          "category": "现制咖啡"
+        },
+        {
+          "name": "五谷杂粮饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772100948154",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1250,
+      "diff": 5,
+      "items": [
+        {
+          "name": "鸡肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "广式腊味炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "四物老鸭汤面线",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "黑椒牛肉意面",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "虾仁炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772162704278",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772191597437",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 1,
+      "sideWeight": 400,
+      "diff": 5,
+      "items": [
+        {
+          "name": "鲜榨苹果胡萝卜生姜汁350ml",
+          "quantity": 1,
+          "category": "鲜榨果汁"
+        },
+        {
+          "name": "五谷杂粮饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "蜜汁叉烧饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772331889400",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 0,
+      "sideWeight": 1770,
+      "diff": 5,
+      "items": [
+        {
+          "name": "香卤猪耳朵",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "清水韭菜豆芽",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        },
+        {
+          "name": "香卤狮子头（2个）",
+          "quantity": 2,
+          "category": "佐餐凉卤"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772358247386",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 6,
+      "actualCutlery": 9,
+      "simulatedCutlery": 3,
+      "comboQty": 0,
+      "sideWeight": 2435,
+      "diff": 6,
+      "items": [
+        {
+          "name": "鲜炖红菇土猪肉汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "原味鸡扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "黑椒牛肉芝士焗饭",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "开心果牛油果奶昔",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "清水韭菜豆芽",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "猪肉玉米水饺（中份15个）",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 2,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "招牌私房红烧牛肉面",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "香卤鸡腿（1个）",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "浓醇香菇豆腐汤",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "抹茶椰乳小青团（冰）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "蒸饺（6个/份）",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "黑糖珍珠奶茶（热）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772504872185",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "大黄米黑芝麻汤圆",
+          "quantity": 5,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772509961139",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 8,
+      "simulatedCutlery": 2,
+      "comboQty": 0,
+      "sideWeight": 1500,
+      "diff": 6,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 5,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772589741063",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 200,
+      "diff": 5,
+      "items": [
+        {
+          "name": "热可可",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 2,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "芙蓉蒸蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "岩烧乳酪焗玉米",
+          "quantity": 1,
+          "category": "环球小食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772615326272",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "烤甜玉米",
+          "quantity": 1,
+          "category": "环球小食类"
+        },
+        {
+          "name": "原味鸡扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "黑椒肉眼猪扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "原味鸡扒荞麦面色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772676200202",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "咸肉菜饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772677599495",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 2,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "蜜汁鸭腿饭",
+          "quantity": 2,
+          "category": "套餐组合"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772772028450",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 930,
+      "diff": 5,
+      "items": [
+        {
+          "name": "香卤肉肠（1个）",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "马拉糕",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "辣卤豆干",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "香卤狮子头（2个）",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118772878662242",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 5,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "鸡肉咖喱饭",
+          "quantity": 5,
+          "category": "东南亚餐"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118773022646155",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 1,
+      "sideWeight": 300,
+      "diff": 5,
+      "items": [
+        {
+          "name": "脆皮烧鸭+蜜汁叉烧饭（双拼）",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "紫薯轻蔬色拉（无主食）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118773057809060",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1200,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118773117056476",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 780,
+      "diff": 5,
+      "items": [
+        {
+          "name": "清炒菜心",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鸡肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "鲜炖牛排汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "黑椒牛肉芝士焗饭",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118773141077177",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "广式腊味炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "黑椒牛肉意面",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118773147541503",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "咸肉菜饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118773200521200",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 1,
+      "sideWeight": 1470,
+      "diff": 5,
+      "items": [
+        {
+          "name": "大红袍茶叶蛋",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "鲜炖苦瓜黄豆排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "马拉糕",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        },
+        {
+          "name": "脆皮烧鸭饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118773401214428",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 6,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 6,
+      "items": [
+        {
+          "name": "黑椒牛肉芝士焗饭",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 4,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "经典鱼丸汤",
+          "quantity": 5,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118773560710170",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1200,
+      "diff": 6,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "广式腊味炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118773627938427",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 8,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 0,
+      "sideWeight": 2400,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 8,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118773717250412",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黑椒牛肉芝士焗饭",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "黑椒肉眼猪扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "猪颈扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0118773799660005",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 8,
+      "actualCutlery": 11,
+      "simulatedCutlery": 3,
+      "comboQty": 0,
+      "sideWeight": 2400,
+      "diff": 8,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 8,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129772271590297",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129772418512347",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129772419027449",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 500,
+      "diff": 5,
+      "items": [
+        {
+          "name": "五谷杂粮饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129772504111224",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129772682563025",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "标准美式（冰）",
+          "quantity": 1,
+          "category": "现制咖啡"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "虾仁炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "奶油蘑菇浓汤",
+          "quantity": 1,
+          "category": "奶油浓汤"
+        },
+        {
+          "name": "大黄米黑芝麻汤圆",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129772854587302",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1150,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "黑糖珍珠奶茶（热）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "茉莉轻乳茶（热）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "苹果茉莉花茶",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "红烧牛腩",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129772941755025",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 8,
+      "actualCutlery": 11,
+      "simulatedCutlery": 6,
+      "comboQty": 0,
+      "sideWeight": 4530,
+      "diff": 5,
+      "items": [
+        {
+          "name": "牛肉麻婆豆腐",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "肉沫茄子",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鹌鹑蛋红烧肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "番茄炒鸡蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "苦瓜炒蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "清水韭菜豆芽",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 5,
+          "category": "主食类"
+        },
+        {
+          "name": "酸汤安格斯肥牛（小份）",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 3,
+          "category": "主食类"
+        },
+        {
+          "name": "蒜蓉菠菜",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129773028232444",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "肉多多鸡肉卷",
+          "quantity": 1,
+          "category": "汉堡/三明治/肉卷"
+        },
+        {
+          "name": "紫薯轻蔬色拉（无主食）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "香辣鸡翅",
+          "quantity": 2,
+          "category": "环球小食类"
+        },
+        {
+          "name": "牛排薄荷黑椒酱意面",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "标准美式（热）",
+          "quantity": 1,
+          "category": "现制咖啡"
+        },
+        {
+          "name": "标准美式（热）",
+          "quantity": 1,
+          "category": "现制咖啡"
+        },
+        {
+          "name": "奥尔良烤翅（1对）",
+          "quantity": 2,
+          "category": "环球小食类"
+        },
+        {
+          "name": "安格斯牛肉芝士卷",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "巴沙鱼鲜蔬轻卡色拉（无主食）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129773113281492",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 9,
+      "actualCutlery": 9,
+      "simulatedCutlery": 4,
+      "comboQty": 0,
+      "sideWeight": 2700,
+      "diff": 5,
+      "items": [
+        {
+          "name": "咸肉菜饭",
+          "quantity": 9,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129773367640123",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "香茅鸡扒谷物碗（热）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "猪颈扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "黑椒牛扒荞麦面色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "巴沙鱼鲜蔬轻卡色拉（无主食）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129773482419214",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1200,
+      "diff": 6,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129773549740298",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 1,
+      "sideWeight": 1235,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "鹌鹑蛋红烧肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "香卤鸡腿（1个）",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "麻辣口水鸡饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129773717638304",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129773735800445",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129773803812028",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1070,
+      "diff": 5,
+      "items": [
+        {
+          "name": "香卤豆干",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "肉片蛋花汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "五谷杂粮饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "茄子炒豆角",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129773892709253",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129773916496214",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 500,
+      "diff": 5,
+      "items": [
+        {
+          "name": "香芋派",
+          "quantity": 1,
+          "category": "环球小食类"
+        },
+        {
+          "name": "红豆派",
+          "quantity": 1,
+          "category": "环球小食类"
+        },
+        {
+          "name": "香卤狮子头（2个）",
+          "quantity": 5,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "辣子鸡",
+          "quantity": 5,
+          "category": "环球小食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0129773917296359",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 6,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 0,
+      "sideWeight": 1700,
+      "diff": 5,
+      "items": [
+        {
+          "name": "咸肉菜饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "五谷杂粮饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        },
+        {
+          "name": "黑金肉松杂粮炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138772356638224",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 0,
+      "sideWeight": 1920,
+      "diff": 5,
+      "items": [
+        {
+          "name": "农家一碗香",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "爆炒猪肝",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "酒糟红烧肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        },
+        {
+          "name": "麻辣口水鸡（单份）",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138772601415116",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 5,
+          "category": "东南亚餐"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138772681009078",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 0,
+      "sideWeight": 2140,
+      "diff": 5,
+      "items": [
+        {
+          "name": "红烧牛腩",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鱼香肉丝",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "香干炒肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 5,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138772686340412",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黑糖珍珠奶茶（冰）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "黑糖珍珠奶茶（热）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138772708124493",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 3,
+          "category": "主食类"
+        },
+        {
+          "name": "鲜炖目鱼筒骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖苦瓜黄豆排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "肉丸萝卜汤",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138772794893437",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138772878387048",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 300,
+      "diff": 5,
+      "items": [
+        {
+          "name": "莲藕排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "紫薯轻蔬色拉（无主食）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "标准美式（热）",
+          "quantity": 1,
+          "category": "现制咖啡"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138772937550504",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "鲜炖红菇土猪肉汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖红菇土猪肉汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖目鱼筒骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖金线莲鸭腿汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖土猪肉汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖虫草乌鸡汤",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138772943763366",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 580,
+      "diff": 5,
+      "items": [
+        {
+          "name": "奶油蘑菇浓汤",
+          "quantity": 1,
+          "category": "奶油浓汤"
+        },
+        {
+          "name": "莲藕排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "酸辣土豆丝",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "肉丸萝卜汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "番茄炒鸡蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "苏丹王榴莲卷边披萨约7英寸（1-2人份）",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "香芋派",
+          "quantity": 1,
+          "category": "环球小食类"
+        },
+        {
+          "name": "红豆派",
+          "quantity": 1,
+          "category": "环球小食类"
+        },
+        {
+          "name": "清炒红菜苔",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "番茄肉酱意面",
+          "quantity": 2,
+          "category": "意面/披萨/焗饭"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138772946392235",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "鲜炖苦瓜黄豆排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "广式腊味炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "肉丸萝卜汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "鲜炖松茸土鸡汤",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138773140437459",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 300,
+      "diff": 5,
+      "items": [
+        {
+          "name": "咸肉菜饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138773318363388",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138773455951067",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 235,
+      "diff": 5,
+      "items": [
+        {
+          "name": "糯米鸡",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "鸡肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "巴沙鱼鲜蔬轻卡色拉（无主食）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "香卤鸡腿（1个）",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "雪梨桃胶银耳露（冰）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138773485977135",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 510,
+      "diff": 6,
+      "items": [
+        {
+          "name": "肉片蛋花汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "香茅鸡扒谷物碗（热）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "芝士培根土豆泥",
+          "quantity": 1,
+          "category": "环球小食类"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "香煎巴沙鱼谷物碗（热）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "清水韭菜豆芽",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138773547592287",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 8,
+      "actualCutlery": 10,
+      "simulatedCutlery": 5,
+      "comboQty": 5,
+      "sideWeight": 250,
+      "diff": 5,
+      "items": [
+        {
+          "name": "红烧牛腩",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "脆皮烧鸭+白切鸡饭（双拼）",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "苏丹王榴莲卷边披萨约7英寸（1-2人份）",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 3,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "脆皮烧鸭饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "台式经典卤肉饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "台式经典卤肉饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "蜜汁鸭腿+蜜汁叉烧饭（双拼）",
+          "quantity": 1,
+          "category": "套餐组合"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138773631135480",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138773634018023",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "巴沙鱼鲜蔬轻卡色拉（无主食）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "原味鸡扒荞麦面色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138773663467234",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138773739572107",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 1,
+      "sideWeight": 1080,
+      "diff": 5,
+      "items": [
+        {
+          "name": "清炒菜心",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "黑金肉松杂粮炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "脆皮烧鸭饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0138773820390484",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "虾仁炒饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144771904359303",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 0,
+      "sideWeight": 2260,
+      "diff": 5,
+      "items": [
+        {
+          "name": "清炒菜心",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "茄子炒豆角",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "清炒花菜",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        },
+        {
+          "name": "牛肉麻婆豆腐",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144771989690201",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "咸肉菜饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "黑金肉松杂粮炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144772072736013",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144772090209497",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黑椒牛肉芝士焗饭",
+          "quantity": 2,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144772097349178",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "咸肉菜饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "鲜榨苹果羽衣甘蓝橙汁350ml",
+          "quantity": 1,
+          "category": "鲜榨果汁"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144772166116329",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "鲜炖莲子猪肚汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "黑椒牛肉芝士焗饭",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144772598995412",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 0,
+      "sideWeight": 1390,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "蒜蓉菠菜",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144772704036383",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 0,
+      "sideWeight": 1600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "外婆菜炒四季豆",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 4,
+          "category": "主食类"
+        },
+        {
+          "name": "肉沫茄子",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144772774496498",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1100,
+      "diff": 5,
+      "items": [
+        {
+          "name": "咸肉菜饭",
+          "quantity": 3,
+          "category": "主食类"
+        },
+        {
+          "name": "鱼香肉丝",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "黄桃菠萝嘭嘭饼",
+          "quantity": 1,
+          "category": "环球小食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144772849604185",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 1,
+      "sideWeight": 1050,
+      "diff": 5,
+      "items": [
+        {
+          "name": "外婆菜炒四季豆",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 3,
+          "category": "主食类"
+        },
+        {
+          "name": "蜜汁叉烧饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144772874908261",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "鲜炖莲子猪肚汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        },
+        {
+          "name": "黑糖珍珠奶茶（热）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144772944807219",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 5,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 3,
+      "sideWeight": 0,
+      "diff": 5,
+      "items": [
+        {
+          "name": "蜜汁鸭腿饭",
+          "quantity": 3,
+          "category": "套餐组合"
+        },
+        {
+          "name": "鸡肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "雪梨桃胶银耳露（热）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "牛肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "牛排薄荷黑椒酱意面",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "经典鱼丸汤",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773021171028",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 6,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "鸡肉咖喱饭",
+          "quantity": 1,
+          "category": "东南亚餐"
+        },
+        {
+          "name": "鲜炖山药玉米排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "经典鱼丸汤",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773022131168",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1240,
+      "diff": 5,
+      "items": [
+        {
+          "name": "外婆菜炒四季豆",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "爆炒猪肝",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773046779250",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 0,
+      "sideWeight": 1750,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "肉片蛋花汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "肉泥蒸蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鹌鹑蛋红烧肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "清炒快白苗",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "五谷杂粮饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773116491490",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773139133389",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 8,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 0,
+      "sideWeight": 2400,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 8,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773189904131",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773274030345",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773314327136",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 800,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "五谷杂粮饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773368829125",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "虾仁炒饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773373248246",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "鲜炖目鱼筒骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "苹果茉莉花茶",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "咸肉菜饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773461376471",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 1060,
+      "diff": 5,
+      "items": [
+        {
+          "name": "山药炒木耳",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "奥尔良烤翅（1对）",
+          "quantity": 1,
+          "category": "环球小食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773570992074",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 2,
+      "comboQty": 0,
+      "sideWeight": 1920,
+      "diff": 5,
+      "items": [
+        {
+          "name": "山药炒木耳",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "手作荔枝肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "番茄炒鸡蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "芙蓉蒸蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773655906444",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773708630277",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773727621336",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黑糖珍珠奶茶（冰）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "雪梨桃胶银耳露（热）",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        },
+        {
+          "name": "小黄油拿铁（冰）",
+          "quantity": 1,
+          "category": "现制咖啡"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773796891099",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0144773916236197",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 190,
+      "diff": 5,
+      "items": [
+        {
+          "name": "三鲜汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "香茅鸡扒谷物碗",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "香煎巴沙鱼谷物碗",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "热可可",
+          "quantity": 1,
+          "category": "现制奶茶"
+        },
+        {
+          "name": "南瓜糯米软欧",
+          "quantity": 1,
+          "category": "现烤烘焙"
+        },
+        {
+          "name": "葱油西兰花",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "番茄肉酱意面",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145771903639431",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 4,
+      "actualCutlery": 7,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 0,
+      "diff": 7,
+      "items": [
+        {
+          "name": "鲜炖海带筒骨汤",
+          "quantity": 3,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖莲子猪肚汤",
+          "quantity": 2,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖红菇土猪肉汤",
+          "quantity": 3,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖红菇土猪肉汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖目鱼筒骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖目鱼筒骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖金线莲鸭腿汤",
+          "quantity": 2,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖松茸土鸡汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖松茸土鸡汤",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145771908496503",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 10,
+      "actualCutlery": 10,
+      "simulatedCutlery": 5,
+      "comboQty": 0,
+      "sideWeight": 3570,
+      "diff": 5,
+      "items": [
+        {
+          "name": "爆炒猪肝",
+          "quantity": 3,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 10,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145772110233167",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 3,
+      "actualCutlery": 6,
+      "simulatedCutlery": 1,
+      "comboQty": 0,
+      "sideWeight": 900,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 3,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145772182549453",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145772506724446",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 10,
+      "actualCutlery": 13,
+      "simulatedCutlery": 8,
+      "comboQty": 4,
+      "sideWeight": 3060,
+      "diff": 5,
+      "items": [
+        {
+          "name": "蜜汁鸭腿饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "清炒菜心",
+          "quantity": 2,
+          "category": "主菜类"
+        },
+        {
+          "name": "肉片蛋花汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖目鱼筒骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鲜炖苦瓜黄豆排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "肉丸萝卜汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "爆炒猪肝",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "香辣孜然鸡肉拌饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "茄子炒豆角",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "湛江白切鸡饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "脆皮烧鸭+蜜汁叉烧饭（双拼）",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 4,
+          "category": "主食类"
+        },
+        {
+          "name": "外婆菜炒蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "蜜汁叉烧饭",
+          "quantity": 1,
+          "category": "套餐组合"
+        },
+        {
+          "name": "啤酒鸭",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "醇香玉米浓汤",
+          "quantity": 1,
+          "category": "奶油浓汤"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145772592500472",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 8,
+      "actualCutlery": 8,
+      "simulatedCutlery": 3,
+      "comboQty": 0,
+      "sideWeight": 2400,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黄金蛋炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "广式腊味炒饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "黑金肉松杂粮炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "黑金肉松杂粮炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 2,
+          "category": "主食类"
+        },
+        {
+          "name": "虾仁炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145772707529323",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 10,
+      "actualCutlery": 10,
+      "simulatedCutlery": 4,
+      "comboQty": 0,
+      "sideWeight": 3000,
+      "diff": 6,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 10,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145773028456396",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "鲜炖苦瓜黄豆排骨汤",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145773051361339",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145773112122105",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 7,
+      "actualCutlery": 10,
+      "simulatedCutlery": 5,
+      "comboQty": 0,
+      "sideWeight": 3640,
+      "diff": 5,
+      "items": [
+        {
+          "name": "清炒菜心",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "手作荔枝肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "酸辣土豆丝",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "农家辣椒小炒肉",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "茄子炒豆角",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白米饭",
+          "quantity": 7,
+          "category": "主食类"
+        },
+        {
+          "name": "外婆菜炒蛋",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "啤酒鸭",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "白菜炖豆腐",
+          "quantity": 1,
+          "category": "主菜类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145773222831057",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 11,
+      "actualCutlery": 11,
+      "simulatedCutlery": 4,
+      "comboQty": 4,
+      "sideWeight": 0,
+      "diff": 7,
+      "items": [
+        {
+          "name": "安格斯牛肉芝士卷",
+          "quantity": 3,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "安格斯牛肉芝士卷",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "日式照烧鸡肉芝士卷",
+          "quantity": 4,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "黑椒牛扒荞麦面色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "黑椒肉眼猪扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "黑椒牛扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "紫薯轻蔬色拉（无主食）",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "台式经典卤肉饭",
+          "quantity": 2,
+          "category": "套餐组合"
+        },
+        {
+          "name": "香茅鸡扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "香茅鸡扒荞麦面色拉",
+          "quantity": 2,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "香菇焖鸡套餐（含米饭+半荤菜+时蔬）",
+          "quantity": 2,
+          "category": "套餐组合"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145773228983072",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "现烤缤纷水果披萨约7英寸（1人份）",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "日式照烧鸡肉芝士卷",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "现烤奥尔良鸡肉披萨约7英寸（1人份）",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        },
+        {
+          "name": "黑松露牛肉炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "虾仁炒饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145773485916170",
+      "cutleryType": "商家按量提供",
+      "merchantCutlery": 10,
+      "actualCutlery": 10,
+      "simulatedCutlery": 4,
+      "comboQty": 0,
+      "sideWeight": 3000,
+      "diff": 6,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 10,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145773628588400",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 600,
+      "diff": 5,
+      "items": [
+        {
+          "name": "白米饭",
+          "quantity": 2,
+          "category": "主食类"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145773889748335",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 580,
+      "diff": 5,
+      "items": [
+        {
+          "name": "清炒菜心",
+          "quantity": 1,
+          "category": "主菜类"
+        },
+        {
+          "name": "鸡蛋肉丝炒河粉",
+          "quantity": 1,
+          "category": "主食类"
+        },
+        {
+          "name": "猪颈扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "番茄肉酱意面",
+          "quantity": 1,
+          "category": "意面/披萨/焗饭"
+        }
+      ]
+    },
+    {
+      "orderNo": "#0145773919021205",
+      "cutleryType": "自定义数量",
+      "merchantCutlery": 2,
+      "actualCutlery": 5,
+      "simulatedCutlery": 0,
+      "comboQty": 0,
+      "sideWeight": 320,
+      "diff": 5,
+      "items": [
+        {
+          "name": "辣卤鸡腿",
+          "quantity": 1,
+          "category": "佐餐凉卤"
+        },
+        {
+          "name": "原味鸡扒糙米饭色拉",
+          "quantity": 1,
+          "category": "轻食沙拉类"
+        },
+        {
+          "name": "至尊虾堡",
+          "quantity": 1,
+          "category": "汉堡/三明治/肉卷"
+        },
+        {
+          "name": "五谷杂粮饭",
+          "quantity": 1,
+          "category": "主食类"
+        }
+      ]
+    }
+  ]
+}

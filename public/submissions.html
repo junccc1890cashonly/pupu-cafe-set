@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>调研提交结果</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: #f6f2e9;
+      color: #1f2937;
+    }
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+    .hero, .card {
+      background: #fffdf8;
+      border: 1px solid #eadfc9;
+      border-radius: 20px;
+      box-shadow: 0 12px 28px rgba(95, 71, 35, 0.06);
+    }
+    .hero { padding: 24px; }
+    .card { padding: 20px; margin-top: 16px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      padding: 10px 8px;
+      border-bottom: 1px solid #efe5d5;
+      text-align: left;
+      font-size: 14px;
+      vertical-align: top;
+    }
+    th {
+      background: #fcf7ed;
+      color: #6b5a43;
+    }
+    .muted { color: #6b7280; }
+    a { color: #8f5f27; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>用户提交结果</h1>
+      <p class="muted">这里展示所有用户已提交的选择结果。每次提交包含 10 个订单的答案。</p>
+      <a href="/">返回调研首页</a>
+    </section>
+    <section id="content"></section>
+  </div>
+
+  <script>
+    const content = document.getElementById("content");
+
+    function render(submissions, storage) {
+      if (!submissions.length) {
+        content.innerHTML = `<section class="card"><p>暂时还没有提交结果。</p><p class="muted">当前存储方式：${storage}</p></section>`;
+        return;
+      }
+
+      content.innerHTML = submissions.map((submission, index) => {
+        const rows = submission.answers.map(answer => `
+          <tr>
+            <td>${answer.orderNo}</td>
+            <td>${answer.selectedCutlery}</td>
+            <td>${answer.simulatedCutlery}</td>
+            <td>${answer.actualCutlery}</td>
+            <td>${answer.merchantCutlery}</td>
+            <td>${answer.diff}</td>
+          </tr>
+        `).join("");
+
+        return `
+          <section class="card">
+            <h2>提交 ${submissions.length - index}</h2>
+            <p class="muted">提交时间：${submission.submittedAt}</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>订单号</th>
+                  <th>用户选择</th>
+                  <th>仿真值</th>
+                  <th>实际值</th>
+                  <th>商家按量提供</th>
+                  <th>diff</th>
+                </tr>
+              </thead>
+              <tbody>${rows}</tbody>
+            </table>
+          </section>
+        `;
+      }).join("");
+    }
+
+    async function load() {
+      const response = await fetch("/api/submissions");
+      const payload = await response.json();
+      render(payload.submissions || [], payload.storage || "unknown");
+    }
+
+    load().catch(error => {
+      content.innerHTML = `<section class="card"><p>加载失败：${error.message}</p></section>`;
+    });
+  </script>
+</body>
+</html>
