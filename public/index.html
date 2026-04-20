@@ -42,11 +42,6 @@
       flex-wrap: wrap;
       align-items: center;
     }
-    .toolbar a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-    }
     .button {
       border: none;
       border-radius: 999px;
@@ -73,6 +68,11 @@
       display: grid;
       gap: 16px;
       margin-top: 20px;
+    }
+    .footer-actions {
+      display: flex;
+      justify-content: center;
+      margin-top: 24px;
     }
     .card {
       padding: 20px;
@@ -121,22 +121,22 @@
   <div class="wrap">
     <section class="hero">
       <h1>中式餐具包调研</h1>
-      <p>每次随机展示 10 个 <code>diff &gt;= 5</code> 的订单。请你根据订单明细判断，这个订单合理需要多少个中式餐具包。</p>
       <div class="toolbar">
-        <button id="submitButton" class="button button-primary">提交</button>
         <button id="refreshButton" class="button button-secondary">刷新 10 个订单</button>
-        <a href="/submissions.html">查看用户提交结果</a>
       </div>
       <div id="status" class="status"></div>
     </section>
 
     <section id="orders" class="list"></section>
+    <div class="footer-actions">
+      <button id="submitButtonBottom" class="button button-primary">提交</button>
+    </div>
   </div>
 
   <script>
     const ordersEl = document.getElementById("orders");
     const statusEl = document.getElementById("status");
-    const submitButton = document.getElementById("submitButton");
+    const submitButtonBottom = document.getElementById("submitButtonBottom");
     const refreshButton = document.getElementById("refreshButton");
     let currentOrders = [];
 
@@ -194,7 +194,7 @@
       return currentOrders.map((order, index) => {
         const checked = document.querySelector(`input[name="order-${index}"]:checked`);
         if (!checked) {
-          throw new Error(`订单 ${order.orderNo} 还没有选择结果`);
+          throw new Error("还有订单没有选择结果");
         }
         return {
           orderNo: order.orderNo,
@@ -226,7 +226,7 @@
       }
     }
 
-    submitButton.addEventListener("click", submitAnswers);
+    submitButtonBottom.addEventListener("click", submitAnswers);
     refreshButton.addEventListener("click", loadOrders);
     loadOrders().catch(error => setStatus(error.message, true));
   </script>
